@@ -1,3 +1,98 @@
+/*
+  layout-klassen
+*/
 
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #cab367e7;
+    margin: 5% 10% 10% 10%;
+    padding: 20;
+    color: brown;
+  }
+  
+  .wrapper{
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    padding: 50px;
+    background-color: rgb(247, 238, 191);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  }
 
-/*# sourceMappingURL=style.css.map */
+ 
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .intro{  
+    flex: 2;
+    padding: 20px;
+    margin-top: 5%; 
+  }
+  
+  .overview{
+    flex: 1;
+    margin-top: 5%;
+    padding: 20px;
+    background-color: rgb(155, 154, 131);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  }
+  .overview img {
+    width: 100vw;
+    
+    object-fit: cover; /* Das Bild wird die gesamte Fläche des Containers abdecken */
+}
+  .navigation{
+    background-color: #cab367e7;
+    padding: 20px;
+    margin-top: 0%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  }
+  
+  .main{
+    margin-top: 5%;
+    padding: 0px;
+  }
+  
+  /*
+  
+    Styling Klassen
+  
+  */
+  h1{
+    color: darkgoldenrod;
+    text-align: center;
+    font-size: 65px;
+  }
+  h2{
+    color: brown;
+    margin-top: 5%;
+  }
+  #unterh1{
+    text-align: center;
+    color: brown;
+  }
+  .listen{
+    margin-top: 2%;
+    padding: 5px;
+  }
+  li{
+    padding: 10px;
+  }
+  .bold{
+  font-weight: bold
+  }
+  .underline{
+    text-decoration: underline;
+  }
+  
+  .img-container{
+    width: 80%;
+    height: auto;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }

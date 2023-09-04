@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+       
+        <link rel="stylesheet" href="dist/css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+            rel="stylesheet" />
+            <title>Terranea</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <h1>Pen & Paper</h1>
+            <h2 id="unterh1">Die Welt von Terranea</h2>
+            <div class="row">
+                <div class="intro">
+                    <a name="einstieg"><h2>Einstieg</h2></a>
+                    <h3>Das Spiel-System</h3>
+                    <p>
+                        In unserem 2W6-System werden die Attribute Stärke, Geschicklichkeit, Ausdauer,
+                        Intelligenz, Charisma, Technik und Magie durch Würfeln ermittelt. Du hast insgesamt 14
+                        Würfe mit 2W6 zur Verfügung und darfst die besten 7 Ergebnisse auf die Attribute
+                        verteilen. Die Augen der 2W6 werden addiert, um den Wert der Attribute zu ermitteln. <br>
+                    </p>
+                    <p> Beispiel: Du würfelst 14 Mal mit 2W6 und erhältst folgende Ergebnisse: 8, 10, 7, 12, 5, 9,
+                        6, 11, 4, 8, 7, 6, 9, 10. Die besten 7 Ergebnisse sind: 12, 11, 10, 10, 9, 9, 8. Diese Werte
+                        kannst du nun den Attributen zuordnen. <br>
+                    </p>
+
+                    <p> Wenn das Ergebnis aller Attribute zusammen niedriger als 35 ist, darfst du alle Attribute
+                        neu würfeln. Wenn das Ergebnis aller Attribute zusammen höher als 70 ist, musst du alle
+                        Attribute neu würfeln. 
+                    </p>
+                </div>
+                <div class="overview">
+                    <img
+                        src="img/logo.png">
+                </div>
+            </div>
+            <div class="navigation">
+                <a name="Beispiel"><h2>Stichpunkte</h2></a>
+                <ul>
+                    <li><a href="#einstieg"> Der Einstieg </a></li>
+                    <li><a href="#attri"> Attribute </a></li>
+                    <li><a href="#grund"> Das HTML-Grungerüst </a></li>
+                    <li><a href="#int_ext"> Internal & External CSS </a></li>
+                    <li>
+                        <a href="#import_html_tags">
+                            Die wichtigsten HTML-Tags
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#import_css_tags">
+                            Die Wichtigsten CSS-Attribute
+                        </a>
+                    </li>
+                    <li><a href="#class"> Was ist class? </a></li>
+                    <li><a href="#selektor"> CSS-Selektoren </a></li>
+                    <li><a href="#flex"> Was ist das Flex-Modell? </a></li>
+                    <li><a href="#font"> Font-Familys </a></li>
+                </ul>
+            </div>
+            <div class="main">
+                <a name="attri"><h2>Attribute</h2></a>
+                <p>
+                    •  <span class="bold">Stärke:</span> Physische Kraft und Kampffähigkeiten. (wichtig für Lebenspunkte) <br>
+                    •  <span class="bold">Geschicklichkeit:</span> Körperliche Beweglichkeit und Präzision. <br>
+                    •  <span class="bold">Ausdauer:</span> Kondition und Gesundheit. (wichtig für Lebenspunkte und
+                    Schattentechniken) <br>
+                    •  <span class="bold">Intelligenz:</span> Logisches Denken und Wissen. <br>
+                    •  <span class="bold">Charisma:</span> Überzeugungskraft und soziale Fähigkeiten.<br>
+                    •  <span class="bold">Technik:</span> Handwerkliche und technische Fähigkeiten.<br>
+                    • <span class="bold"> Magie:</span> Verständnis und Nutzung von magischen Energien. Unterteilt in (Heilig /
+                    Natur)<br>
+
+                    
+                </p>
+                <p>
+                    <span class="bold"> LP boni</span> = (Stärkewert / 2)+( Ausdauerwert / 2) <br>
+                    <span class="bold"> Lebenspunkte</span>= 2D6 + (LP – Boni * 2) <br>
+                    <span class="bold"> Attribut Boni</span> = Attribut / 4 <br>
+                    <span class="bold"> Rüstung</span> = wert der Rüstung + Rüstboni (+ Rassenboni) <br>
+                    <br>
+                    Einige Rassen der Tiermenschen haben durch ihre Robuste Haut eine Form natürlicher <br>
+                    Rüstung die beim Rüstungswert drauf gerechnet werden.
+                </p>
+                <p>
+                    In HTML gibt es eine Hierarchie von Tags, bei der ein
+                    übergeordneter (auch genannter Eltern-Tag) einen oder
+                    mehrere untergeordnete (auch genannt Kind-Tags) enthält. Ein
+                    Beispiel dafür ist der body-Tag, der normalerweise alle
+                    Inhalte einer Webseite enthält, einschließlich Header-,
+                    Haupt-, Seitenleisten-, Fußzeilen- und anderen Inhalten.
+                    Diese werden als Kind-Tags bezeichnet und befinden sich
+                    innerhalb des body-Tags. Ein weiteres Beispiel ist der
+                    div-Tag, der oft als Container-Tag verwendet wird, um andere
+                    Tags oder Elemente zu gruppieren, die als Kind-Tags
+                    fungieren.
+                </p>
+                <div class="image-container">
+                    <img
+                        src="000_img/hierachien.PNG"
+                        alt="Beispiel zu den Hierachien" />
+                </div>
+                <p>
+                    HTML-Dokumente werden mit
+                    <span class="bold">.html</span> endung gespeichert <br />
+                    <span class="bold"> Bsp.: index.html</span> <br />
+                </p>
+                <p>
+                    CSS-Dokumente werden mit
+                    <span class="bold">.css</span> endung gespeichert <br />
+                    <span class="bold">Bsp.: style.css</span> <br />
+                    <span class="bold underline">
+                        Zu beachten: empfohlen ist alles klein zu schreiben und
+                        keine Leerzeichen dabei zu verwenden!
+                    </span>
+                </p>
+                <a name="grund"><h2>Das HTML-Grundgerüst</h2></a>
+                <div class="listen">
+                    <ul>
+                        <li>
+                            <span class="bold"> &lt;!DOCTYPE html&gt; </span> =
+                            sag dem Browser das der nachfolgende text als Html
+                            interpretieren soll;
+                        </li>
+                        <li>
+                            <span class="bold">
+                                &lt;html&gt;&lt;/html&gt;
+                            </span>
+                            = wird auch als Wurzelelement bezeichnet
+                        </li>
+                        <li>
+                            <span class="bold">
+                                &lt;head&gt;&lt;/head&gt;
+                            </span>
+                            = hier befinden sich sog. Metadaten die f&uuml;r
+                            SEO/SEM relevant sind, sowie der Titel der Webseite
+                        </li>
+                        <li>
+                            <span class="bold">
+                                &lt;body&gt;&lt;/body&gt;
+                            </span>
+                            = hier kommt der Content der Webseite rein
+                        </li>
+                    </ul>
+                </div>
+                <a name="int_ext"> <h2>Internal & External</h2> </a>
+                <p>
+                    Prinzipiell gibt es 2 unterschiedliche Arten von Tags:
+                    Internal und External
+                </p>
+                <div class="listen">
+                    <ul>
+                        <li>
+                            <span class="bold">Internal-Tags:</span> befinden
+                            sich innerhalb des &lt;head&gt;-Tags und betreffen
+                            die Darstellung der Seite, z.B. &lt;style&gt;,
+                            &lt;meta&gt;, etc.
+                        </li>
+                        <li>
+                            <span class="bold">External-Tags:</span>befinden
+                            sich in einer separaten Datei und betreffen die
+                            Darstellung der Seite, z.B. &lt;link&gt; f&uuml;r
+                            CSS-Dateien.
+                        </li>
+                    </ul>
+                </div>
+                <p>
+                    <span class="bold underline">
+                        Wichtig ist dabei zu beachten, dies nicht mit den Inline
+                        und Block Elementen zu verwechseln!
+                    </span>
+                </p>
+                <p>
+                    Inline Tags werden innerhalb eines Textabschnittes
+                    verwendet, dabei gilt, dass diese keine feste H&ouml;he und
+                    Breite haben, sondern genau da anfangen und enden, wo die
+                    Tags sind. <br />
+                    <br />
+                    <span class="bold">
+                        Bsp.: &lt;strong&gt;, &lt;a&gt;, &lt;em&gt;, usw.
+                    </span>
+                </p>
+
+                <div class="image-container">
+                    <img src="000_img/inline.PNG" alt="" />
+                    <p>
+                        Noch besser ist f&uuml;r das Designen des Textes
+                        <span class="bold">
+                            &lt;span class=&quot;&quot;&gt;
+                        </span>
+                        zu verwenden und der Klasse dann die Eigenschaften zu
+                        geben die f&uuml;r den Text ben&ouml;tigt werden
+                    </p>
+                    <img src="000_img/span_html.PNG" alt="" />
+                    <img src="000_img/span_html.PNG" alt="" />
+                </div>
+                <p>
+                    Block Elemente beginnen auf einer neuen Zeile und haben eine
+                    H&ouml;he und Breite, die &uuml;ber CSS ver&auml;ndert
+                    werden kann (siehe: padding und margin).
+                    <span class="bold">
+                        Bsp.: &lt;head&gt;, &lt;body&gt;, &lt;div&gt;, usw..
+                    </span>
+                </p>
+                <div class="image-container">
+                    <img src="000_img/block_element.PNG" alt="" />
+                </div>
+                <a name="import_html_tags">
+                    <h2>Die wichtigsten HTML-Tags</h2>
+                </a>
+                <div class="listen">
+                    <ul>
+                        <li>
+                            <span class="bold"> &lt;title&gt;: </span>Benennt
+                            den Titel der Seite, der im Browser-Tab angezeigt
+                            wird.
+                        </li>
+                        <li>
+                            <span class="bold"> &lt;link&gt;: </span>Verweist
+                            auf die CSS-Datei bzw. bindet externe Dateien ein.
+                        </li>
+                        <li>
+                            <span class="bold"> &lt;nav&gt;:</span> Definiert
+                            eine Navigationsleiste.
+                        </li>
+                        <li>
+                            <span class="bold"> &lt;div&gt;: </span> Definiert
+                            einen Container-Block, der f&uuml;r Layoutzwecke
+                            verwendet werden kann.
+                        </li>
+                        <li>
+                            <span class="bold"> class:</span> Ein Attribut, das
+                            einem Element eine bestimmte Klasse zuweist, um es
+                            in CSS-Code zu identifizieren.
+                        </li>
+                        <li>
+                            <span class="bold"> &lt;p&gt;: </span> Definiert
+                            einen Absatz.
+                        </li>
+                        <li>
+                            <span class="bold">&lt;a&gt;:</span> Definiert einen
+                            Hyperlink.
+                            <ul>
+                                <li>
+                                    <span class="bold"> href: </span> wird
+                                    verwendet um auf eine Externe Website
+                                    weiterzuleiten
+                                </li>
+                                <li>
+                                    <span class="bold"> target: </span> wird
+                                    standardm&auml;&szlig;ig in dem selben Tab
+                                    ge&ouml;ffnet; _self
+                                </li>
+                                <li>
+                                    <span class="bold">
+                                        target=&rdquo;blank&rdquo;:
+                                    </span>
+                                    &ouml;ffnet link in einem neuen tab
+                                </li>
+                                <li>
+                                    <span class="bold">
+                                        Bsp.: &lt;a
+                                        href=&quot;Index.html&quot;&gt;Home&lt;/a&gt;
+                                    </span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="bold"> &lt;img&gt;: </span>
+                            Bettet ein Bild in die Webseite ein.
+                            <ul>
+                                <li>
+                                    <span class="bold">
+                                        src=&quot;link&rdquo;:
+                                    </span>
+                                    gibt den Ursprung des Bildes an, kann z.B.
+                                    &Uuml;ber Google etc eingebunden werden
+                                </li>
+                                <li>
+                                    <span class="bold"
+                                        >alt=&rdquo;Text&rdquo;:
+                                    </span>
+                                    gibt einen alternativen Text an wenn das
+                                    bild nicht geladen werden kann oder man
+                                    dr&uuml;ber Hovert
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="bold"> &lt;ul&gt;: </span>
+                            Definiert eine ungeordnete Liste. (zb. Zeichen
+                            &ndash;)
+                        </li>
+                        <li>
+                            <span class="bold"> &lt;ol&gt;: </span>
+                            Definiert eine geordnete Liste. (zb. Nummeriert)
+                            <ul>
+                                <li>
+                                    <span class="bold"> &lt;li&gt;: </span>
+                                    Definiert einen Listeneintrag
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="bold"> &lt;table&gt;: </span> Definiert
+                            eine Tabelle.
+                            <ul>
+                                <li>
+                                    <span class="bold"> &lt;tr&gt;: </span>
+                                    Definiert eine Tabellenzeile.
+                                </li>
+                                <li>
+                                    <span class="bold"> &lt;th&gt;: </span>
+                                    Definiert eine Tabellenkopfzeile.
+                                </li>
+                                <li>
+                                    <span class="bold"> &lt;td&gt;: </span>
+                                    Definiert eine Tabellenzelle.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="bold"> &lt;form&gt;: </span> Definiert
+                            ein Formular f&uuml;r die Benutzereingabe.
+                            <ul>
+                                <li>
+                                    <span class="bold"> &lt;input&gt;: </span>
+                                    Definiert eine Eingabesteuerung innerhalb
+                                    eines Formulars.
+                                </li>
+                                <li>
+                                    <span class="bold"> &lt;button&gt;: </span>
+                                    Definiert eine Schaltfl&auml;che innerhalb
+                                    eines Formulars.
+                                </li>
+                                <li>
+                                    <span class="bold"> &lt;select&gt;: </span>
+                                    Definiert eine Dropdown-Liste innerhalb
+                                    eines Formulars.
+                                </li>
+                                <li>
+                                    <span class="bold">
+                                        &lt;textarea&gt;:
+                                    </span>
+                                    Definiert ein mehrzeiliges Texteingabefeld
+                                    innerhalb eines Formulars in das der User
+                                    Text einf&uuml;gen kann
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="bold"> &lt;iframe&gt;: </span> kann
+                            verschiedene Inhalte von anderen Quellen einbinden.
+                            <ul>
+                                <li>
+                                    <span class="bold"> z.B.: </span> Google
+                                    Maps, Youtube Videos, audio- oder
+                                    videodateien, PDF-dokumente, Social Media
+                                    Plattformen oder online Formulare von
+                                    servern
+                                </li>
+                                <li>
+                                    <span class="bold underline">
+                                        Daf&uuml;r nutzt man unter teilen /
+                                        Share -&gt; Embed und Kopiert dort den
+                                        angezeigten Code
+                                    </span>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <a name="import_css_tags">
+                    <h2>Die wichtigsten CSS-Attribute</h2>
+                </a>
+
+                <ul>
+                    <li>
+                        <span class="bold"> body: </span> Selektor für den
+                        gesamten Körper der HTML-Seite.
+                    </li>
+                    <li>
+                        <span class="bold"> padding: </span> Der Abstand
+                        zwischen dem Element und dem Inhalt innerhalb des
+                        Elementes.
+                        <ul>
+                            <li>
+                                Zu beachten beim padding ist die reihenfolge der
+                                übergebenden werte
+                            </li>
+                            <li>
+                                <span class="bold"> Padding: </span> 10px, 20px,
+                                15px, 25; | dabei stehen die Zahlen für Oben,
+                                Rechts, Unten und Links also dem Uhrzeigersinn
+                                folgend.
+                            </li>
+                            <li>
+                                Bei padding kann die Richtung auch direkt
+                                angesprochen werden.
+                            </li>
+                            <li>
+                                <span class="bold">
+                                    Padding-top Padding-right Padding-bottom
+                                    padding-left
+                                </span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="bold"> margin: </span> Der Abstand zwischen
+                        dem Element und den umliegenden Elementen.
+                        <ul>
+                            <li>
+                                Margin funktioniert dabei genauso wie padding
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="bold"> background-color: </span> Die
+                        Hintergrundfarbe eines Elementes.
+                    </li>
+                    <li>
+                        <span class="bold"> Text-shadow: </span> erzeugt einen
+                        schatten um den Text eines Elementes
+                    </li>
+                    <li>
+                        <span class="bold"> text-transform: </span> ermöglicht
+                        es den Text in z.B. nur großbuchstaben darzustellen
+                        <ul>
+                            <li>
+                                <span class="bold"> uppercase: </span> Text wird
+                                komplett in Großbuchstaben dargestellt
+                            </li>
+                            <li>
+                                <span class="bold"> lowercase: </span> Text wird
+                                komplett in Kleinbuchstaben dargestellt
+                            </li>
+                            <li>
+                                <span class="bold"> Capitalize:</span> Der
+                                anfangsbuchstabe jedes wortes wird
+                                großgeschrieben
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="bold"> text-align:</span> wird für die
+                        ausrichtung des Textes verwendet
+                        <ul>
+                            <li>Optionen sind left, center, right</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="bold"> width, height: </span> Die Breite
+                        und Höhe eines Elementes.
+                    </li>
+                    <li>
+                        <span class="bold"> color: </span> legt die Textfarbe
+                        fest.
+                    </li>
+                    <li>
+                        <span class="bold"> background-color: </span> legt die
+                        Hintergrundfarbe fest
+                    </li>
+                    <li>
+                        <span class="bold"> font-size: </span>legt die
+                        Schriftgröße fest.
+                    </li>
+                    <li>
+                        <span class="bold"> font-family:</span> legt die
+                        Schriftart fest.
+                    </li>
+                    <li>
+                        <span class="bold"> border: </span> Gibt einem Element
+                        eine Umrandung bzw. Zeigt diese an.
+                    </li>
+                    <li>
+                        <span class="bold"> border-style: </span> Legt den Stil
+                        der Umrandung fest (z.B. solid, dashed, dotted, etc.)
+                    </li>
+                    <li>
+                        <span class="bold"> border-width:</span> Legt die Breite
+                        der Umrandung fest (z.B. in Pixel oder Prozent).
+                    </li>
+                    <li>
+                        <span class="bold"> border-color:</span> Legt die Farbe
+                        der Umrandung fest (z.B. als Hex-Code, RGB-Wert oder
+                        CSS-Farbname).
+                    </li>
+                </ul>
+                <a name="class"> <h2>Was ist Class?</h2> </a>
+                <p>
+                    Um in HTML Attribute oder Container besser spezifizieren zu
+                    können, kann man ihnen eine
+                    <span class="bold">id</span> geben. IDs sind zur einmaligen
+                    Anwendung für ein Attribute oder Objekt gedacht. Der
+                    Selektor für ids ist die <span class="bold"> #name{}</span>.
+                </p>
+
+                <div class="image-container">
+                    <span class="bold">HTML-Code</span><br />
+                    <img src="000_img/id_html.PNG" alt="" /><br />
+                    <span class="bold">CSS-Code</span><br />
+                    <img src="000_img/id_css.PNG" alt="" />
+                </div>
+
+                <p>
+                    Wofür können wir das verwenden? Wenn wir z.B. mehrere
+                    Container haben, die wir gleich stylen wollen, ist es
+                    praktisch für diese eine
+                    <span class="bold"> class </span> zu definieren und diese
+                    dann im css über . anzusprechen.
+                </p>
+                <div class="image-container">
+                    <span class="bold"> HTML-Code</span> <br />
+                    <img src="000_img/class_html.PNG" alt="" /> <br />
+                    <span class="bold"> CSS-Code </span> <br />
+                    <img src="000_img/class_css.PNG" alt="" /><br />
+                </div>
+                <p>
+                    Es ist m&ouml;glich, Objekten mehrerer Klassen zuzuordnen,
+                    indem man in die &ldquo;&rdquo; die Klassennamen durch ein
+                    Leerzeichen trennt.
+                </p>
+                <div class="image-container">
+                    <span class="bold">Bsp.:</span> <br />
+                    <img src="000_img/class_mehr_namen_html.PNG" alt="" />
+                    <br />
+                </div>
+                <p>
+                    Hier wird dem div-container die klasse einmalig
+                    <span class="bold">und</span> die klasse bold zugewiesen
+                </p>
+                <p>
+                    <span class="bold"> Tipp: </span> <br />
+                    Beim Benennen der Klassen und IDs ist es von Vorteil, Namen
+                    zu verwenden, die darauf zurückschließen lassen, was damit
+                    gemacht wird. Der Maschine ist es egal, wie diese genannt
+                    wird, es hilft am Ende dem Programmieren, den Code lesbarer
+                    und verständlicher zu machen.
+                </p>
+                <a name="selektor"> <h2>CSS Selektor</h2> </a>
+                <p>
+                    In CSS werden Selektoren verwendet, um gewisse HTML-Elemente
+                    direkt anzusprechen.
+                </p>
+
+                <div class="bold">
+                    <span class="bold"> Bsp.: </span> <br />
+                    <img src="000_img/selektoren_html.PNG" alt="" /> <br />
+                    <img src="000_img/selektoren_css.PNG" alt="" /> <br />
+                </div>
+                <p>
+                    Durch <span class="bold"> .left-sidebar </span> wird der
+                    Container mit der Klasse
+                    <span class="bold"> "left-sidebar" </span> angesprochen, den
+                    wir zuvor in unserem html Dokument erstellt haben. In den
+                    geschwungenen Klammern
+                    <span class="bold"> {...} </span>stehen dann die Attribute,
+                    die angepasst werden sollen.
+                </p>
+
+                <div class="image-container">
+                    <span class="bold">
+                        Tags wie &lt;body&gt; oder &lt;nav&gt; k&ouml;nnen
+                        direkt ohne den . angesprochen werden:
+                    </span>
+                    <br />
+                    <img src="000_img/body_ansprechen_css.PNG" alt="" /> <br />
+                </div>
+                <a name="flex"> <h2>Was ist das Flex-Modell?</h2> </a>
+                <p>
+                    Das Flexbox-Modell in HTML und CSS ermöglicht es, Elemente
+                    flexibel zu positionieren und anzuordnen. Dabei wird ein
+                    Flex-Container definiert, der die Eigenschaften
+                    <span class="bold">
+                        flex-direction, justify-content, align-items und
+                        flex-wrap
+                    </span>
+                    besitzt. Mit diesen Eigenschaften lassen sich die
+                    Ausrichtung und Anordnung der Flex-Elemente im Container
+                    steuern.
+                </p>
+                <div class="image-container">
+                    <span class="bold"> HTML-Code </span><br />
+                    <img src="000_img/flex_html.PNG" alt="" /><br />
+                    <span class="bold">CSS-Code</span><br />
+                    <img src="000_img/flex_css.PNG" alt="" /><br />
+                </div>
+                <p>
+                    Das Beispiel würde eine Flex-Container mit drei
+                    Flex-Elementen
+                    <span class="bold"> (Item 1, Item 2, Item 3) </span>
+                    erzeugen. Der Container würde in einer horizontalen Reihe
+                    angezeigt werden
+                    <span class="bold"> (flex-direction: row) </span>, zentriert
+                    <span class="bold"> (justify-content: center) </span> und in
+                    der Mitte des Containers ausgerichtet
+                    <span class="bold"> (align-items: center) </span>. Da die
+                    Elemente nicht alle in eine Reihe passen würden, wird eine
+                    Umbruch Funktion aktiviert
+                    <span class="bold"> (flex-wrap: wrap) </span>, damit die
+                    Elemente automatisch in die nächste Zeile geschoben werden.
+                    <br />
+                    Das Attribut
+                    <span class="bold"> flex: 1 1 300px </span> gibt an, dass
+                    die Breite und Höhe des Elements flexibel sind und sich an
+                    die Größe des Containers anpassen, wobei eine minimale
+                    Breite von 300 Pixeln festgelegt wird. Weitere Attribute und
+                    Eigenschaften, die mit Flexbox verwendet werden können, sind
+                    unter anderem
+                    <span class="bold">
+                        order, align-self, flex-grow, flex-shrink und flex-basis
+                    </span>
+                    .
+                </p>
+                <a name="font"> <h2>Font-Familys</h2> </a>
+                <p>
+                    Die Eigenschaft <span class="bold"> "font-family" </span> in
+                    HTML und CSS wird verwendet, um die Schriftarten auf einer
+                    Webseite zu definieren. Es ist wichtig, die passenden
+                    Schriftarten auszuwählen, um die Lesbarkeit und Ästhetik der
+                    Webseite zu verbessern. Es gibt verschiedene Arten von
+                    Schriftarten, darunter Serifen-Schriften,
+                    Sans-Serif-Schriften, Skript-Schriften und mehr. Die am
+                    häufigsten verwendeten Schriftarten sind
+                    <span class="bold">
+                        Arial, Times New Roman, Verdana, Georgia und Helvetica.
+                    </span>
+                </p>
+                <p>
+                    Um eine Schriftart in HTML und CSS anzuwenden, muss sie auf
+                    dem Computer oder dem Webserver installiert sein. Die
+                    Schriftart kann dann durch Angabe der Font-families in der
+                    CSS-Regel <span class="bold"> "font-family" </span> auf den
+                    Text angewendet werden. Es ist auch möglich, eine Liste von
+                    Font-Families anzugeben, um eine Alternative zu bieten,
+                    falls die erste Schriftart nicht verfügbar ist.
+                </p>
+                <div class="image-container">
+                    <span class="bold">
+                        Bsp.: <br />
+                        CSS-Code <br />
+                    </span>
+                    <img src="000_img/font-familys_css.PNG" alt="" />
+                </div>
+                <p>
+                    Dies bedeutet, dass die Schriftart Arial bevorzugt wird,
+                    falls verfügbar, andernfalls wird auf eine allgemeine
+                    Sans-Serif-Schriftart zurückgegriffen.
+                </p>
+                <p>
+                    Natürlich ist es auch möglich Font-Families aus externen
+                    Quellen wie zum Beispiel Google-Fonts zu verwenden:
+                    <br />Gehe dafür auf die Webseite, von der du die Schriftart
+                    importieren möchtest (in folgendem Beispiel google-fonts:
+                    <a href="https://fonts.google.com/" target="_blank">
+                        Google Fonts
+                    </a>
+                    ). Suche eine Schriftart aus und kopiere den
+                    bereitgestellten Code
+                    <span class="bold">(meist unter Teilen -> Embed)</span>. Nun
+                    muss der Code in die Head-Sektion der Webseite implementiert
+                    werden.
+                </p>
+                <div class="image-container">
+                    <span class="bold">Das sieht dann ungefähr so aus:</span>
+                    <br />
+                    <img src="000_img/font-familys_html.PNG" alt="" />
+                </div>
+                <p>
+                    Jetzt kann die Schriftart für Texte in der CSS Datei über
+                    font-family ausgewählt werden.
+                </p>
+                <p>
+                    Hier sind wir auch erstmal am Ende angekommen ich werde im
+                    laufe des jahreskurses noch ergänzungen hinzufügen
+                </p>
+            </div>
+        </div>
+        <footer><p>&copy; 2023 Zusammenfassung - Miriam Bönninghoff</p></footer>
+    </body>
+</html>
