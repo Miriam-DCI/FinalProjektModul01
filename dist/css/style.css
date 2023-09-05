@@ -64,7 +64,10 @@ a {
 
   .card-container {
     background-image: url("../../img/hintergrund_01.png");
+    background-size: cover;
+    background-repeat: no-repeat;
     border-radius: 22px;
+    object-fit: cover;
 
   }
  
