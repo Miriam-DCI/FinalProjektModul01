@@ -120,21 +120,11 @@ a {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
 }
-
-/* Media Query für kleinere Bildschirme */
-@media screen and (max-width: 768px) {
-  .card {
-      width: 100%; /* Karten nehmen die volle Breite */
-  }
-}
-
   .main{
     margin-top: 5%;
     padding: 0px;
   }
-  
   /*
-  
     Styling Klassen
   
     Farben: darkgoldenrod, brown, hotpink, darkgreen
@@ -163,12 +153,31 @@ a {
   li{
     padding: 10px;
   }
-  /* .text {
+  .text-container {
+    background-image: url("../../img/person1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+  }
+.table {
+  margin-top: 5%;
+  padding: 20px;
+  background-color: rgb(155, 154, 131);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+}
+.table ul {
+ list-style: decimal;
+  display: flex; /* Anordnen der <li> nebeneinander */
+  flex-wrap: wrap; /* Umbruch der Elemente, wenn sie nicht auf eine Zeile passen */
+  gap: 10px; /* Abstand zwischen den <li> Elementen */
+}
 
-
-  } */
-
-
+.table li {
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
   .bold{
   font-weight: bold
   }
@@ -184,6 +193,9 @@ a {
     max-width: 100%;
     height: auto;
   }
+ /* #wrapper001terr{
+ 
+ } */
 
   /*
     pseudo klassen
@@ -203,4 +215,33 @@ a:hover {
 /* Link-Styling für besuchte Links */
 a:visited {
   color: darkgreen; 
+}
+
+/*
+
+  Media Query für kleinere Bildschirme 
+
+  */
+@media screen and (max-width: 768px) {
+  .card {
+      width: 100%; /* Karten nehmen die volle Breite */
+  }
+}
+
+/*
+
+  Animationen
+
+*/
+
+/* Hinzufügen einer Animation beim Hover-Effekt */
+.table li:hover {
+  background-color: darkgoldenrod;
+  transform: scale(1.1);
+}
+
+/* Entferne die Hervorhebung, wenn der Mauszeiger das Element verlässt */
+.table li:not(:hover) {
+  background-color: rgb(206, 204, 173);
+  transform: scale(1);
 }
