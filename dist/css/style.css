@@ -1,14 +1,58 @@
 /*
+Reset CSS
+*/
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+
+/*
   layout-klassen
 */
+
 
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: #cab367e7;
     margin: 5% 10% 10% 10%;
     padding: 20;
+    padding-top: 50px;
     color: brown;
   }
+  .fixed-nav {
+    position: fixed; /* Fixiere die Navigationsleiste am oberen Rand */
+    top: 0; /* Abstand zum oberen Rand des Bildschirms */
+    left: 0;
+    right: 0;
+    height: 5%; /* Navigationsleiste auf 5% der Bildschirmhöhe setzen */
+    background-color: #333;
+    color: #fff;
+    z-index: 1000; /* Stelle sicher, dass die Navigationsleiste über anderen Inhalten liegt */
+    overflow: hidden; /* Verhindere vertikales Scrollen der Navigationsleiste */
+    display: flex; /* Verwende das Flexbox-Layoutmodell */
+    justify-content: center; /* Zentriere die Links horizontal */
+    align-items: center; /* Zentriere die Links vertikal */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+li {
+    margin: 0 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s; /* Übergangseffekt für Farbänderungen */
+}
+
   
   .wrapper{
     display: flex;
@@ -47,10 +91,36 @@ body {
   .navigation{
     background-color: #cab367e7;
     padding: 20px;
-    margin-top: 0%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   }
-  
+  .navigation p {
+    margin: 10px;
+  }
+  /* Standard-Styling für die Karten-Container */
+.card-container {
+  display: flex; /* Verwende Flexbox */
+  flex-wrap: wrap; /* Zeilenumbruch aktivieren */
+  justify-content: space-between; /* Platz zwischen den Karten */
+}
+
+/* Standard-Styling für die Karten */
+.card {
+  width: calc(33.33% - 20px);
+  background-color: #cab367e7;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+
+/* Media Query für kleinere Bildschirme */
+@media screen and (max-width: 768px) {
+  .card {
+      width: 100%; /* Karten nehmen die volle Breite */
+  }
+}
+
   .main{
     margin-top: 5%;
     padding: 0px;
@@ -60,6 +130,11 @@ body {
   
     Styling Klassen
   
+    Farben: darkgoldenrod, brown, hotpink, darkgreen
+      navigation: #cab367e7
+      overview: rgb(155, 154, 131)
+      body: rgb(247, 238, 191)
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   */
   h1{
     color: darkgoldenrod;
@@ -96,3 +171,23 @@ body {
     max-width: 100%;
     height: auto;
   }
+
+  /*
+    pseudo klassen
+  */
+
+  /* Standard-Link-Styling */
+a {
+  color: brown; /* Standardfarbe für Links */
+  text-decoration: none; /* Entferne Unterstreichungen */
+}
+
+/* Link-Styling bei Hover */
+a:hover {
+  color: hotpink; 
+}
+
+/* Link-Styling für besuchte Links */
+a:visited {
+  color: darkgreen; 
+}
