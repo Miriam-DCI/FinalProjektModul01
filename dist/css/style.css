@@ -73,7 +73,7 @@ a {
  
   .row {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
   }
   
@@ -188,11 +188,14 @@ a {
   .img-container{
     width: 80%;
     height: auto;
+    
   }
-  img {
+  .img-container img {
     max-width: 100%;
     height: auto;
+    border-radius: 20px;
   }
+ 
  /* #wrapper001terr{
  
  } */
