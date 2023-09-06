@@ -7,46 +7,15 @@
        
         <link rel="stylesheet" href="../dist/css/style.css">
         <!-- <link rel="stylesheet" href="../06_script.js"> -->
+        <!-- JS-Datein -->
+        <script src="../06_script.js"></script>
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
         <title>Terranea</title>
 
-        <script>
-            // URL zur Textdatei
-            // Funktion, die den JavaScript-Code ausführt
-            function loadText() {
-                // URL zur Textdatei
-                let textFileUrl = '../content/001_terranier.txt';
-                
-                console.log(textFileUrl);
-                // Element, in dem der Text angezeigt werden soll
-                let textContainer = document.getElementById('text-container');
-
-                // Text aus der Datei einlesen
-                fetch(textFileUrl)
-                    .then(response => {
-                        console.log(response);
-                        if (!response.ok) {
-                            throw new Error('Network response was not ok');
-                        }
-                        return response.text();
-                    })
-                    .then(text => {
-                // Text formatieren und in das HTML-Element einfügen
-                text = text.replace(/\n/g, '<br>'); // Zeilenumbrüche hinzufügen
-                text = text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>'); // Fett geschriebenen Text hervorheben
-                textContainer.innerHTML = text; // HTML-Tags interpretieren
-            })
-                    .catch(error => {
-                        console.error('Error:', error);
-                    });
-            }
-
-            // Event-Listener für das DOMContentLoaded-Event
-            document.addEventListener('DOMContentLoaded', loadText);
-        </script>
+       
     </head>
     <body>
         <nav class="fixed-nav">
@@ -63,8 +32,9 @@
 
         <section class="wrapper" id="wrapper001terr">
             <h1>Terranier</h1>
-           
-            <div id="text-container"></div>
+            <div class="text-container" data-filepath="../content/001_terranier.txt"></div>
+            
+            <!-- <div id="text-container"></div> -->
             <div class="table bold" id="skills" >
                 <ul>
                     <li> Segnen: Dieser Zauber gewährt einem Ziel Segen und erhöht temporär dessen 	Fähigkeiten.</li>
@@ -83,5 +53,6 @@
             </div>
         </section>
         <footer><p>&copy; 2023 Erstellt von - Miriam Bönninghoff</p></footer>
+        
     </body>
 </html>
