@@ -1,0 +1,264 @@
+// SCSS-Variablen für Farben
+$NewNav: #cab367e7;
+$overview: rgb(155, 154, 131);
+$newBody: rgb(247, 238, 191);
+
+
+/*
+Reset CSS
+*/
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+  }
+  
+                                                                          /*
+                                                                            layout-klassen
+                                                                          */
+  
+  
+  body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background-color: ne;
+      margin: 5% 10% 10% 10%;
+      padding: 20px;
+      padding-top: 50px;
+      color: brown;
+    }
+    .fixed-nav {
+      position: fixed; /* Fixiere die Navigationsleiste am oberen Rand */
+      top: 0; /* Abstand zum oberen Rand des Bildschirms */
+      left: 0;
+      right: 0;
+      height: 5%; /* Navigationsleiste auf 5% der Bildschirmhöhe setzen */
+      background-color: #333;
+      color: #fff;
+      z-index: 1000; /* Stelle sicher, dass die Navigationsleiste über anderen Inhalten liegt */
+      overflow: hidden; 
+      display: flex; 
+      justify-content: center; 
+      align-items: center;
+  }
+  
+  ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+  }
+  
+  li {
+      margin: 0 20px;
+  }
+  
+  a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      font-size: 16px;
+      transition: color 0.3s; /* Übergangseffekt für Farbänderungen */
+  }
+  
+    .wrapper{
+      display: flex;
+      flex-direction: column;
+      max-width: 1200px;
+      padding: 50px;
+      background-color: $newBody;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    }
+  
+    .card-container {
+      background-image: url("../../img/hintergrund_01.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      border-radius: 22px;
+      object-fit: cover;
+  
+    }
+   
+    .row {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+    
+    .intro{  
+      flex: 2;
+      padding: 20px;
+      margin-top: 5%; 
+    }
+    
+    .overview{
+      flex: 1;
+      margin-top: 5%;
+      padding: 20px;
+      background-color: $overview;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    }
+    .overview img {
+      width: 100vw;
+      
+      object-fit: cover; /* Das Bild wird die gesamte Fläche des Containers abdecken */
+  }
+    .navigation{
+      background-color: $NewNav;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    }
+    .navigation p {
+      margin: 10px;
+    }
+    /* Standard-Styling für die Karten-Container */
+  .card-container {
+    display: flex; /* Verwende Flexbox */
+    flex-wrap: wrap; /* Zeilenumbruch aktivieren */
+    justify-content: space-between; /* Platz zwischen den Karten */
+  }
+  
+  /* Standard-Styling für die Karten */
+  .card {
+    width: calc(33.33% - 20px);
+    background-color: $NewNav;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+  }
+  .main{
+    margin-top: 5%;
+    padding: 0px;
+  }
+                                                                            /*
+                                                                              Styling Klassen
+                                                                            
+                                                                              Farben: darkgoldenrod, brown, hotpink, darkgreen
+                                                                                navigation: #cab367e7
+                                                                                overview: rgb(155, 154, 131)
+                                                                                body: rgb(247, 238, 191)
+                                                                                box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+                                                                            */
+  h1{
+    color: darkgoldenrod;
+    text-align: center;
+    font-size: 65px;
+  }
+  h2{
+    color: brown;
+    margin-top: 5%;
+  }
+  #unterh1{
+    text-align: center;
+    color: brown;
+  }
+  .listen{
+    margin-top: 2%;
+    padding: 5px;
+  }
+  li{
+    padding: 10px;
+  }
+  .text-container {
+    background-image: url("../../img/person1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+  }
+  .table {
+  margin-top: 5%;
+  padding: 20px;
+  background-color: $overview;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  }
+  .table ul {
+   list-style: decimal;
+    display: flex; /* Anordnen der <li> nebeneinander */
+    flex-wrap: wrap; /* Umbruch der Elemente, wenn sie nicht auf eine Zeile passen */
+    gap: 10px; /* Abstand zwischen den <li> Elementen */
+  }
+  
+  .table li {
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+    .bold{
+    font-weight: bold
+    }
+    .underline{
+      text-decoration: underline;
+    }
+    
+    .img-container{
+      width: 80%;
+      height: auto;
+      
+    }
+    .img-container img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 20px;
+    }
+   
+   /* #wrapper001terr{
+   
+   } */
+
+   #skillsText{
+
+    background-image: url("../../img/hintergrund_02.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+   }
+  
+                                                                                /*
+                                                                                  pseudo klassen
+                                                                                */
+  
+    /* Standard-Link-Styling */
+  a {
+    color: brown; /* Standardfarbe für Links */
+    text-decoration: none; /* Entferne Unterstreichungen */
+  }
+  
+  /* Link-Styling bei Hover */
+  a:hover {
+    color: hotpink; 
+  }
+  
+  /* Link-Styling für besuchte Links */
+  a:visited {
+    color: darkgreen; 
+  }
+  
+                                                                              /*
+  
+                                                                                Media Query für kleinere Bildschirme 
+  
+                                                                                */
+  @media screen and (max-width: 768px) {
+    .card {
+        width: 100%; /* Karten nehmen die volle Breite */
+    }
+  }
+  
+  /*
+  
+    Animationen
+  
+  */
+  
+  /* Hinzufügen einer Animation beim Hover-Effekt */
+  .table li:hover {
+    background-color: darkgoldenrod;
+    transform: scale(1.1);
+  }
+  
+  /* Entferne die Hervorhebung, wenn der Mauszeiger das Element verlässt */
+  .table li:not(:hover) {
+    background-color: $newBody;
+    transform: scale(1);
+  }
